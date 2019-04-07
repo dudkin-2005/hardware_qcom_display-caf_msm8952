@@ -6,6 +6,7 @@ LOCAL_MODULE                  := libqdutils
 LOCAL_VENDOR_MODULE           := true
 LOCAL_MODULE_TAGS             := optional
 LOCAL_SHARED_LIBRARIES        := $(common_libs) libui libbinder libqservice
+LOCAL_HEADER_LIBRARIES        := libhardware_headers libutils_headers
 LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdutils\" -Wno-float-conversion
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)

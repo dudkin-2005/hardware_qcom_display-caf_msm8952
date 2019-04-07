@@ -6,6 +6,7 @@ LOCAL_MODULE                  := libhdmi
 LOCAL_VENDOR_MODULE           := true
 LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
+LOCAL_HEADER_LIBRARIES        := display_headers
 LOCAL_SHARED_LIBRARIES        := $(common_libs) liboverlay libqdutils
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdhdmi\" -Wno-float-conversion
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
